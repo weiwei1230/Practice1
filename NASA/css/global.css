@@ -170,7 +170,7 @@ h2 {
 /* ---header--- */
 header {
     height: 800px;
-    background-image: url(../images/nasa_galaxy_jpg.jpg);
+    background-image: url(NASA/images/nasa_galaxy_jpg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@ header {
 #news {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url(../images/nasa_astro_jpg.jpg);
+    background-image: url(NASA/images/nasa_astro_jpg.jpg);
     background-position: 0 -150px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -222,7 +222,7 @@ header {
 #events {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url(../images/nasa_rising_jpg.jpg);
+    background-image: url(NASA/images/nasa_rising_jpg.jpg);
     background-position: 0 -150px;
 }
 #events .date {
