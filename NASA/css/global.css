@@ -1,0 +1,302 @@
+/* ---global--- */
+* {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    color: #f8f8f8;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.btn {
+    background: #0B3D91;
+    color: #f8f8f8;
+    display: inline-block;
+    padding: 8px 10px;
+}
+.btn:hover {
+    background: #2C4F91;
+}
+.line {
+    position: relative;
+}
+.line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 33px;
+    width: 60px;
+    top: 17px;
+    left: 0px;
+    border-top: 2px solid #f8f8f8; 
+}
+img {
+    width: 100%;
+    vertical-align: top;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 5px;
+}
+h2 {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+/* ---grid--- */
+.full-width {
+    width: 100%;
+}
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+}
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+[class*="col"] {
+    float: left;
+    padding: 10px;
+}
+
+
+/* ---topnav--- */
+#topnav {
+    /* background: #cbcbcb; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+}
+#topnav div {
+    /* background: #5e5e5e; */
+    padding: 10px 25px;
+}
+#topnav a {
+    display: block;
+    transition: all .7s;
+}
+#topnav a:hover {
+    color: #fc3d21;
+}
+#topnav .address {
+    float: left;
+}
+#topnav .search {
+    float: right;
+}
+#topnav .language {
+    float: right;
+}
+#topnav .language li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* ---nav--- */
+#nav {
+    /* background: #cbcbcb; */
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    top: 70px;
+}
+#nav a {
+    /* background: #5e5e5e; */
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all .7s;
+}
+#nav a:hover {
+    background: #fc3d21;
+    color: #5e5e5e;
+}
+#nav img {
+    width: 200px;
+    height: 100px;
+}
+#nav .logo {
+    float: left;
+}
+#nav .menu {
+    float: right;
+}
+#nav .menu li {
+    float: left;
+}
+/* ---header--- */
+header {
+    height: 800px;
+    background-image: url(../images/nasa_galaxy_jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ---section info--- */
+#info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #000;
+}
+#info h3 {
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+#info p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#info .col-5 {
+    padding-top: 125px;
+}
+/* ---section news--- */
+#news {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/nasa_astro_jpg.jpg);
+    background-position: 0 -150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#news p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* ---div gallery--- */
+#gallery {
+    background: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#gallery .col-4 img {
+    height: 540px;
+}
+#gallery .col-6 img {
+    height: 250px;
+}
+/* ---div events--- */
+#events {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../images/nasa_rising_jpg.jpg);
+    background-position: 0 -150px;
+}
+#events .date {
+    text-align: center;
+    display: table;
+    height: 150px;
+    width: 100px;
+}
+#events .day {
+    display: table-cell;
+    vertical-align: middle;
+}
+#events .content {
+    display: table;
+    border: solid 3px #f8f8f8;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+#events .title, #events .credits, #events .locate {
+    display: table-cell;
+    vertical-align: middle;
+    width: calc(100% / 3);
+}
+/* ---div blog--- */
+#blog {
+    background: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#blog img {
+    height: 210px;
+}
+#blog .pic {
+    position: relative;
+}
+#blog p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#blog h3 {
+    padding-top: 30px;
+}
+#blog .pic .date {
+    position: absolute;
+    background: #fc3d21;
+    height: 60px;
+    width: 60px;
+    bottom: 0;
+    text-align: center;
+    display: table;
+}
+#blog .pic .date .day {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* ---footer--- */
+footer {
+    background: #5e5e5e;
+    height: 100px;
+    line-height: 100px;
+}
+footer .col-4 {
+    text-align: right;
+}
+footer .col-4 a {
+    margin: 0 8px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: 1px solid;
+    text-align: center;
+}
+footer .col-4 a:hover {
+    border: 2px;
+}
